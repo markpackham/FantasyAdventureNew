@@ -13,6 +13,33 @@ public class Cleric extends MagicUser implements IPotion {
     public Cleric(String name, int health, int maxHealth, int armourHealth, int maxArmourHealth, int meeleAttack, int maxMeeleAttack, ArrayList items, int magicLevel,
                   int magicMaxLevel, int magicAttack, int maxMagicAttack, int healPotionAmount, int strengthPotionAmount, int magicRestorePotionAmount) {
         super(name, health, maxHealth, armourHealth, maxArmourHealth, meeleAttack, maxMeeleAttack, items, magicLevel, magicMaxLevel, magicAttack, maxMagicAttack);
+    this.healPotionAmount = healPotionAmount;
+    this.strengthPotionAmount = strengthPotionAmount;
+    this.magicRestorePotionAmount = magicRestorePotionAmount;
+    }
+
+    public int getHealPotionAmount() {
+        return healPotionAmount;
+    }
+
+    public void setHealPotionAmount(int healPotionAmount) {
+        this.healPotionAmount = healPotionAmount;
+    }
+
+    public int getStrengthPotionAmount() {
+        return strengthPotionAmount;
+    }
+
+    public void setStrengthPotionAmount(int strengthPotionAmount) {
+        this.strengthPotionAmount = strengthPotionAmount;
+    }
+
+    public int getMagicRestorePotionAmount() {
+        return magicRestorePotionAmount;
+    }
+
+    public void setMagicRestorePotionAmount(int magicRestorePotionAmount) {
+        this.magicRestorePotionAmount = magicRestorePotionAmount;
     }
 
     @Override

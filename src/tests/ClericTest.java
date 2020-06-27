@@ -6,6 +6,7 @@ import characters.Warrior;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 
@@ -43,5 +44,21 @@ public class ClericTest {
         cleric1.healSpell(warrior1);
         assertEquals(400,warrior1.getHealth());
         assertEquals(46,cleric1.getMagicLevel());
+    }
+
+    @Test
+    public void strengthPotion(){
+        warrior1.setMeeleAttack(0);
+        cleric1.strengthPotion(warrior1);
+        assertEquals(5,warrior1.getMeeleAttack());
+        assertEquals(4,cleric1.getStrengthPotionAmount());
+    }
+
+    @Test
+    public void healPotion(){
+        cleric1.setHealth(10);
+        cleric1.healPotion(cleric1);
+        assertEquals(20,cleric1.getHealth());
+        assertEquals(4,cleric1.getHealPotionAmount());
     }
 }
