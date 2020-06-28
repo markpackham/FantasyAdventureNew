@@ -2,7 +2,7 @@ package characters;
 
 import java.util.ArrayList;
 
-public abstract class MagicUser extends GameCharacter {
+public abstract class MagicUser extends Hero {
     protected int magicLevel;
     protected int magicMaxLevel;
     protected int magicAttack;
