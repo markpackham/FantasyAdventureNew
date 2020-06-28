@@ -27,4 +27,12 @@ public class WarriorTest {
         warrior1.restFromAttacking();
         assertEquals(9, warrior1.getWeaponCoolDown());
     }
+
+    public void weaponMaxLimit(){
+        warrior1.restFromAttacking();
+        warrior1.restFromAttacking();
+        warrior1.restFromAttacking();
+        warrior1.restFromAttacking();
+        assertEquals(10, warrior1.getWeaponCoolDown());
+    }
 }
