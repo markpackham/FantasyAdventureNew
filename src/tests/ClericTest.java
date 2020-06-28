@@ -18,12 +18,12 @@ public class ClericTest {
 
     @Before
     public void before(){
-        cleric1 = new Cleric("Helm", 200, 200, 10, 10, 10, 10, null,
+        cleric1 = new Cleric("Helm", 200, 200, 10, 10, 10, 10, 50, null,
                 50, 50,5, 5, 5, 5, 5);
 
-        warrior1 = new Warrior("Adjantis", 400, 400, 10, 10, 50, 50, null, 10, 10);
+        warrior1 = new Warrior("Adjantis", 400, 400, 10, 10, 50, 50, 10, null, 10, 10);
 
-        goblin1 = new Enemy("Goblin Chief", 10, 10, 5, 5, 5, 5, null);
+        goblin1 = new Enemy("Goblin Chief", 10, 10, 5, 5, 5, 5, 1, null);
     }
 
     @Test

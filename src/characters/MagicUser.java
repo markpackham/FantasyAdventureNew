@@ -8,8 +8,8 @@ public abstract class MagicUser extends Hero {
     protected int magicAttack;
     protected int maxMagicAttack;
 
-    public MagicUser(String name, int health, int maxHealth, int armourHealth, int maxArmourHealth, int meeleAttack, int maxMeeleAttack, ArrayList items, int magicLevel, int magicMaxLevel, int magicAttack, int maxMagicAttack) {
-        super(name, health, maxHealth, armourHealth, maxArmourHealth, meeleAttack, maxMeeleAttack, items);
+    public MagicUser(String name, int health, int maxHealth, int armourHealth, int maxArmourHealth, int meeleAttack, int maxMeeleAttack, int gold, ArrayList items, int magicLevel, int magicMaxLevel, int magicAttack, int maxMagicAttack) {
+        super(name, health, maxHealth, armourHealth, maxArmourHealth, meeleAttack, maxMeeleAttack, gold, items);
         this.magicLevel = magicLevel;
         this.magicMaxLevel = magicMaxLevel;
         this.magicAttack = magicAttack;

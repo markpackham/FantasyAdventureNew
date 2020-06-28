@@ -10,9 +10,10 @@ public abstract class GameCharacter {
     protected int maxArmourHealth;
     protected int meeleAttack;
     protected int maxMeeleAttack;
+    protected int gold;
     protected ArrayList items;
 
-    public GameCharacter(String name, int health, int maxHealth, int armourHealth, int maxArmourHealth, int meeleAttack, int maxMeeleAttack, ArrayList items) {
+    public GameCharacter(String name, int health, int maxHealth, int armourHealth, int maxArmourHealth, int meeleAttack, int maxMeeleAttack, int gold, ArrayList items) {
         this.name = name;
         this.health = health;
         this.maxHealth = maxHealth;
@@ -20,6 +21,7 @@ public abstract class GameCharacter {
         this.maxArmourHealth = maxArmourHealth;
         this.meeleAttack = meeleAttack;
         this.maxMeeleAttack = maxMeeleAttack;
+        this.gold = gold;
         this.items = items;
     }
 
@@ -77,6 +79,14 @@ public abstract class GameCharacter {
 
     public void setMaxMeeleAttack(int maxMeeleAttack) {
         this.maxMeeleAttack = maxMeeleAttack;
+    }
+
+    public int getGold() {
+        return gold;
+    }
+
+    public void setGold(int gold) {
+        this.gold = gold;
     }
 
     public ArrayList getItems() {

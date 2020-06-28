@@ -9,8 +9,8 @@ public class Warrior extends NonMagicUser implements IWeapon {
     private int weaponCoolDown;
     private int weaponCoolDownMax;
 
-    public Warrior(String name, int health, int maxHealth, int armourHealth, int maxArmourHealth, int meeleAttack, int maxMeeleAttack, ArrayList items, int weaponCoolDown, int weaponCoolDownMax) {
-        super(name, health, maxHealth, armourHealth, maxArmourHealth, meeleAttack, maxMeeleAttack, items);
+    public Warrior(String name, int health, int maxHealth, int armourHealth, int maxArmourHealth, int meeleAttack, int maxMeeleAttack, int gold, ArrayList items, int weaponCoolDown, int weaponCoolDownMax) {
+        super(name, health, maxHealth, armourHealth, maxArmourHealth, meeleAttack, maxMeeleAttack, gold, items);
         this.weaponCoolDown = weaponCoolDown;
         this.weaponCoolDownMax = weaponCoolDownMax;
     }
